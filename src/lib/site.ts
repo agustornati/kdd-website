@@ -13,8 +13,8 @@ export const site = {
   contact: {
     email: "info@kdd-consulting.com.ar",
     // Número en formato internacional sin signos para el enlace de WhatsApp.
-    whatsapp: "5491100000000",
-    whatsappDisplay: "+54 9 11 0000-0000",
+    whatsapp: "5491156020869",
+    whatsappDisplay: "+54 11 5602-0869",
     location: "Buenos Aires, Argentina",
   },
 } as const;
