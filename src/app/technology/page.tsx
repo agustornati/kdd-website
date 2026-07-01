@@ -38,8 +38,8 @@ export default function TechnologyPage() {
     <>
       <Hero
         eyebrow="KDD Automation"
-        title="Validación financiera automática, con “0 diferencias” como estándar"
-        subtitle="KDD Automation es nuestro sistema interno de automatización y validación de procesos financieros. Reemplaza las conciliaciones manuales por un proceso confiable, trazable y auditable."
+        title="Automatizamos procesos financieros para mejorar la eficiencia"
+        subtitle="KDD Automation es nuestro sistema interno de automatización y validación de procesos financieros: reduce el trabajo manual, mejora la eficiencia y deja todo trazable y auditable."
         actions={[{ href: "/contact", label: "Quiero saber más", variant: "accent" }]}
       />
 
@@ -89,9 +89,9 @@ export default function TechnologyPage() {
             diferencias
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-300">
-            Una conciliación bien hecha cierra en cero. Ese es el resultado que
-            buscamos en cada validación: sin partidas sin explicar, sin sorpresas
-            y con evidencia auditable de respaldo.
+            Una validación bien hecha cierra en cero. Ese es el resultado que
+            buscamos en cada proceso: sin partidas sin explicar, sin sorpresas y
+            con evidencia auditable de respaldo.
           </p>
           <Link href="/contact" className="btn-accent mt-9">
             Conversemos sobre tu caso

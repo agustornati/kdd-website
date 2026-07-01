@@ -57,7 +57,7 @@ export const technology: ServiceArea = {
   label: "Technology",
   title: "Automatización de procesos financieros",
   summary:
-    "Tecnología aplicada a la contabilidad: menos trabajo manual, más precisión y trazabilidad en cada proceso.",
+    "Automatizamos procesos financieros para mejorar la eficiencia: menos trabajo manual, más precisión y mejor trazabilidad.",
   services: [
     {
       icon: "cog",
@@ -72,10 +72,10 @@ export const technology: ServiceArea = {
         "Conectamos tus sistemas y fuentes de datos para que la información fluya sin recargas ni planillas intermedias.",
     },
     {
-      icon: "refresh",
-      title: "Conciliaciones automáticas",
+      icon: "chart",
+      title: "Eficiencia y control de procesos",
       description:
-        "Conciliación bancaria y de cuentas de forma automática, con detección de diferencias a nivel de dato.",
+        "Estandarizamos y aceleramos los procesos financieros para reducir errores, ganar tiempo y mejorar el control de la información.",
     },
     {
       icon: "database",
@@ -104,9 +104,9 @@ export const automationBenefits: { icon: IconName; title: string; description: s
   },
   {
     icon: "cog",
-    title: "Elimina conciliaciones manuales",
+    title: "Reduce el trabajo manual",
     description:
-      "Reemplaza el cruce manual de planillas por un proceso automático, repetible y sin errores humanos.",
+      "Reemplaza tareas repetitivas y el cruce manual de planillas por procesos automáticos, repetibles y sin errores humanos.",
   },
   {
     icon: "document",

@@ -7,7 +7,7 @@ import { areas } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Servicios de KDD Consulting & Technology: contabilidad, impuestos, auditoría y sueldos, más automatización de procesos, integración ERP/SAP, conciliaciones automáticas y herramientas internas.",
+    "Servicios de KDD Consulting & Technology: contabilidad, impuestos, auditoría y sueldos, más automatización de procesos financieros, integración ERP/SAP y herramientas internas.",
 };
 
 export default function ServicesPage() {
