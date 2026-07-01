@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-slate-700 antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply text-navy font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Contenedor centrado estándar del sitio. */
+  .container-site {
+    @apply mx-auto w-full max-w-content px-6 lg:px-8;
+  }
+
+  /* Etiqueta pequeña sobre los títulos de sección. */
+  .eyebrow {
+    @apply text-sm font-semibold uppercase tracking-widest text-accent;
+  }
+
+  /* Botones. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3
+           text-sm font-semibold transition-colors focus:outline-none
+           focus-visible:ring-2 focus-visible:ring-accent/50;
+  }
+  .btn-primary {
+    @apply btn bg-navy text-white hover:bg-navy-800;
+  }
+  .btn-secondary {
+    @apply btn border border-slate-300 bg-white text-navy hover:border-navy hover:bg-slate-50;
+  }
+  .btn-accent {
+    @apply btn bg-accent text-white hover:bg-accent-700;
+  }
+}
