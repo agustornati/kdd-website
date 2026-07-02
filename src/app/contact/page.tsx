@@ -7,7 +7,7 @@ import { site, whatsappUrl } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Contacto",
   description:
-    "Contactate con KDD Consulting & Technology por formulario, email o WhatsApp.",
+    "Contactate con NAT Consulting por formulario, email o WhatsApp. Estudio contable en Buenos Aires.",
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
         <div className="lg:col-span-2">
           <div className="space-y-4">
             <a
-              href={whatsappUrl("Hola KDD, quisiera hacer una consulta.")}
+              href={whatsappUrl("Hola NAT Consulting, quisiera hacer una consulta.")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-card transition-colors hover:border-navy/30"

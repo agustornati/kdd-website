@@ -6,7 +6,7 @@ import { Icon } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Nosotros",
   description:
-    "KDD Consulting & Technology es un estudio contable familiar que evoluciona hacia la tecnología y la automatización de procesos financieros.",
+    "NAT Consulting es un estudio contable moderno y profesional especializado en contabilidad general, liquidación de impuestos, sueldos y asesoramiento para empresas y profesionales.",
 };
 
 const values = [
@@ -24,9 +24,9 @@ const values = [
   },
   {
     icon: "sparkles",
-    title: "Evolución constante",
+    title: "Actualización permanente",
     description:
-      "Incorporamos tecnología y automatización para mejorar la calidad y la velocidad del trabajo contable.",
+      "Nos capacitamos continuamente para brindar el mejor asesoramiento en materia contable, impositiva y laboral.",
   },
 ] as const;
 
@@ -35,8 +35,8 @@ export default function AboutPage() {
     <>
       <Section
         eyebrow="Nosotros"
-        title="Un estudio contable familiar que evoluciona con tecnología"
-        intro="Nacimos como un estudio contable tradicional y hoy estamos digitalizando el trabajo contable, sumando automatización sin perder la cercanía de siempre."
+        title="Un estudio contable moderno y profesional"
+        intro="Acompañamos a empresas y profesionales en su gestión contable, impositiva y laboral con dedicación, precisión y la cercanía de siempre."
         centered
       />
 
@@ -49,16 +49,17 @@ export default function AboutPage() {
               confianza y conocimiento profundo de cada cliente.
             </p>
             <p>
-              Con esa base, dimos un paso más. Vimos cuánto tiempo se pierde en
-              tareas manuales y cuántos errores evita la tecnología bien aplicada.
-              Así nació el área de <strong className="text-navy">Technology</strong>:
-              automatización de procesos, integraciones y validaciones financieras.
+              Somos un estudio contable moderno y cercano. Creemos en el trabajo
+              bien hecho, en la comunicación clara y en estar presentes cuando
+              nuestros clientes más nos necesitan.
             </p>
             <p>
-              Nuestra visión es clara: <strong className="text-navy">digitalizar
-              el trabajo contable</strong> para que sea más preciso, trazable y
-              auditable, y que el equipo pueda dedicarse a lo que realmente aporta
-              valor: analizar y asesorar.
+              Nuestra visión es clara:{" "}
+              <strong className="text-navy">
+                brindar un servicio contable de excelencia
+              </strong>{" "}
+              que combine el rigor profesional con el trato personalizado que
+              cada empresa merece.
             </p>
           </div>
 

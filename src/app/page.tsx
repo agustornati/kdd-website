@@ -3,51 +3,37 @@ import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { ServiceCard } from "@/components/ServiceCard";
 import { Icon } from "@/components/icons";
-import { areas } from "@/lib/content";
+import { consulting } from "@/lib/content";
 
 const differentials = [
-  "Reducimos el trabajo manual y los errores de carga.",
-  "Aumentamos la precisión con validaciones a nivel de dato.",
-  "Mejoramos la trazabilidad de cada proceso financiero.",
-  "Liberamos tiempo del equipo para el análisis y la decisión.",
+  "Atención personalizada y conocimiento profundo de cada cliente.",
+  "Cumplimiento impositivo y laboral con rigor y precisión.",
+  "Respuesta ágil ante consultas y vencimientos.",
+  "Confidencialidad y profesionalismo en cada gestión.",
 ];
 
 export default function HomePage() {
   return (
     <>
       <Hero
-        eyebrow="KDD Consulting & Technology"
-        title="Contabilidad, impuestos y automatización de procesos financieros"
-        subtitle="Somos un estudio contable que combina la confianza del asesoramiento tradicional con tecnología que automatiza y valida tus procesos financieros."
+        eyebrow="NAT Consulting"
+        title="Contabilidad, impuestos y asesoramiento para tu empresa"
+        subtitle="Somos un estudio contable moderno y profesional. Te acompañamos en la gestión contable, impositiva y laboral con el rigor técnico y la cercanía que tu empresa necesita."
         actions={[
           { href: "/services", label: "Ver servicios", variant: "accent" },
           { href: "/contact", label: "Contactar", variant: "secondary" },
         ]}
       />
 
-      {/* Dos áreas del negocio */}
+      {/* Servicios */}
       <Section
         eyebrow="Qué hacemos"
-        title="Dos áreas, una misma firma"
-        intro="Unimos el rigor de un estudio contable con la eficiencia de la tecnología aplicada a las finanzas."
+        title="Nuestros servicios"
+        intro="Asesoramiento profesional para el orden, el cumplimiento y el crecimiento de tu empresa."
       >
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          {areas.map((area) => (
-            <div
-              key={area.id}
-              className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 sm:p-8"
-            >
-              <p className="eyebrow">{area.label}</p>
-              <h3 className="mt-2 text-2xl font-semibold text-navy">
-                {area.title}
-              </h3>
-              <p className="mt-3 text-slate-600">{area.summary}</p>
-              <div className="mt-6 grid gap-4 sm:grid-cols-2">
-                {area.services.map((service) => (
-                  <ServiceCard key={service.title} {...service} />
-                ))}
-              </div>
-            </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {consulting.services.map((service) => (
+            <ServiceCard key={service.title} {...service} />
           ))}
         </div>
       </Section>
@@ -60,15 +46,15 @@ export default function HomePage() {
               Nuestro diferencial
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl">
-              La contabilidad tradicional, potenciada con tecnología
+              El rigor profesional con el trato cercano de siempre
             </h2>
             <p className="mt-4 text-lg text-slate-300">
-              No reemplazamos al contador: lo potenciamos. Incorporamos
-              automatización para que los procesos sean más rápidos, precisos y
-              auditables, sin perder el trato cercano de siempre.
+              Combinamos el conocimiento técnico de un estudio profesional con
+              la cercanía y dedicación que cada cliente merece. Tu empresa no es
+              un número: es una relación de largo plazo.
             </p>
-            <Link href="/technology" className="btn-accent mt-8">
-              Conocé KDD Automation
+            <Link href="/contact" className="btn-accent mt-8">
+              Consultanos sin compromiso
             </Link>
           </div>
           <ul className="grid gap-4">
@@ -91,11 +77,11 @@ export default function HomePage() {
       <Section centered>
         <div className="rounded-3xl border border-slate-200 bg-slate-50 px-6 py-14 text-center sm:px-12">
           <h2 className="text-3xl font-semibold text-navy sm:text-4xl">
-            ¿Listo para ordenar y automatizar tus finanzas?
+            ¿Necesitás un estudio contable de confianza?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-            Conversemos sobre tu empresa y encontremos juntos la combinación
-            justa de asesoramiento y tecnología.
+            Conversemos sobre tu empresa y encontremos el asesoramiento
+            contable que necesitás.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/contact" className="btn-primary">

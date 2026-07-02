@@ -22,10 +22,10 @@ export function Navbar() {
           onClick={() => setOpen(false)}
         >
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-navy text-sm font-bold text-white">
-            KDD
+            NAT
           </span>
           <span className="hidden sm:inline text-base">
-            Consulting <span className="text-accent">&amp;</span> Technology
+            Consulting
           </span>
         </Link>
 

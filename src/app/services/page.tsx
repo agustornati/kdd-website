@@ -7,7 +7,7 @@ import { areas } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Servicios",
   description:
-    "Servicios de KDD Consulting & Technology: contabilidad, impuestos, auditoría y sueldos, más automatización de procesos financieros, integración ERP/SAP y herramientas internas.",
+    "Servicios de NAT Consulting: contabilidad general, liquidación de impuestos, liquidación de sueldos, asesoramiento contable, constitución de sociedades y consultoría financiera.",
 };
 
 export default function ServicesPage() {
@@ -16,7 +16,7 @@ export default function ServicesPage() {
       <Section
         eyebrow="Servicios"
         title="Todo lo que tu empresa necesita, en un solo lugar"
-        intro="Combinamos asesoramiento contable e impositivo con soluciones tecnológicas para procesos financieros. Elegí el área que buscás."
+        intro="Asesoramiento contable e impositivo profesional para empresas y profesionales. Elegí el servicio que buscás."
         centered
       />
 
@@ -33,7 +33,7 @@ export default function ServicesPage() {
             </h2>
             <p className="mt-4 text-lg text-slate-600">{area.summary}</p>
           </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {area.services.map((service) => (
               <ServiceCard key={service.title} {...service} />
             ))}
@@ -47,8 +47,8 @@ export default function ServicesPage() {
             ¿No sabés por dónde empezar?
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-300">
-            Contanos tu situación y te proponemos el mejor camino, combinando
-            contabilidad y automatización según tus necesidades.
+            Contanos tu situación y te proponemos el mejor camino para ordenar
+            y profesionalizar la gestión contable de tu empresa.
           </p>
           <Link href="/contact" className="btn-accent mt-8">
             Hablemos

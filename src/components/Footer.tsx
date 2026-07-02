@@ -11,15 +11,14 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <span className="grid h-9 w-9 place-items-center rounded-lg bg-white text-sm font-bold text-navy">
-              KDD
+              NAT
             </span>
             <span className="font-semibold text-white">
-              Consulting &amp; Technology
+              Consulting
             </span>
           </div>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-slate-400">
-            {site.tagline}. Un estudio contable que evoluciona con tecnología y
-            automatización.
+            {site.tagline}.
           </p>
         </div>
 
@@ -56,7 +55,7 @@ export function Footer() {
             </li>
             <li>
               <a
-                href={whatsappUrl("Hola KDD, quisiera hacer una consulta.")}
+                href={whatsappUrl("Hola NAT Consulting, quisiera hacer una consulta.")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-400 transition-colors hover:text-white"
@@ -74,7 +73,7 @@ export function Footer() {
           <p>
             © {year} {site.name}. Todos los derechos reservados.
           </p>
-          <p>Contabilidad · Impuestos · Automatización</p>
+          <p>Contabilidad · Impuestos · Asesoramiento</p>
         </div>
       </div>
     </footer>

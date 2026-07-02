@@ -1,6 +1,6 @@
 /**
- * Contenido de negocio del sitio: las dos áreas (Consulting y Technology) y sus
- * servicios. Se consume desde la Home y desde /services.
+ * Contenido de negocio del sitio: servicios del estudio contable.
+ * Se consume desde la Home y desde /services.
  */
 import type { IconName } from "@/components/icons";
 
@@ -11,7 +11,7 @@ export interface ServiceItem {
 }
 
 export interface ServiceArea {
-  id: "consulting" | "technology";
+  id: string;
   label: string;
   title: string;
   summary: string;
@@ -20,75 +20,53 @@ export interface ServiceArea {
 
 export const consulting: ServiceArea = {
   id: "consulting",
-  label: "Consulting",
+  label: "Servicios Contables",
   title: "Contabilidad y asesoramiento profesional",
   summary:
-    "La solidez de un estudio contable tradicional: cumplimiento, orden y acompañamiento cercano para tu empresa.",
+    "Un estudio contable moderno y profesional: cumplimiento, orden y acompañamiento cercano para tu empresa.",
   services: [
     {
       icon: "calculator",
-      title: "Contabilidad general",
+      title: "Contabilidad General",
       description:
-        "Registración, estados contables y balances con información clara y a tiempo para tomar decisiones.",
+        "Administración y registración contable para empresas y profesionales.",
     },
     {
       icon: "percent",
-      title: "Impuestos",
+      title: "Liquidación de Impuestos",
       description:
-        "Liquidación y planificación impositiva nacional y provincial, cumplimiento de vencimientos y optimización de la carga fiscal.",
-    },
-    {
-      icon: "shield",
-      title: "Auditoría",
-      description:
-        "Revisión y control de la información financiera para garantizar consistencia, transparencia y confianza.",
+        "IVA, Ganancias, Ingresos Brutos y demás obligaciones fiscales.",
     },
     {
       icon: "users",
-      title: "Sueldos y payroll",
+      title: "Liquidación de Sueldos",
       description:
-        "Liquidación de haberes, cargas sociales y administración de personal con precisión y confidencialidad.",
-    },
-  ],
-};
-
-export const technology: ServiceArea = {
-  id: "technology",
-  label: "Technology",
-  title: "Automatización de procesos financieros",
-  summary:
-    "Automatizamos procesos financieros para mejorar la eficiencia: menos trabajo manual, más precisión y mejor trazabilidad.",
-  services: [
-    {
-      icon: "cog",
-      title: "Automatización de procesos contables",
-      description:
-        "Digitalizamos tareas repetitivas —carga, validación y cierres— para reducir errores y liberar tiempo del equipo.",
+        "Administración integral de nómina y obligaciones laborales.",
     },
     {
-      icon: "plug",
-      title: "Integración con ERP o SAP",
+      icon: "shield",
+      title: "Asesoramiento Contable",
       description:
-        "Conectamos tus sistemas y fuentes de datos para que la información fluya sin recargas ni planillas intermedias.",
+        "Asistencia permanente para la toma de decisiones y cumplimiento normativo.",
+    },
+    {
+      icon: "document",
+      title: "Constitución de Sociedades",
+      description:
+        "Asesoramiento y acompañamiento en la creación de nuevas empresas.",
     },
     {
       icon: "chart",
-      title: "Eficiencia y control de procesos",
+      title: "Consultoría Financiera",
       description:
-        "Estandarizamos y aceleramos los procesos financieros para reducir errores, ganar tiempo y mejorar el control de la información.",
-    },
-    {
-      icon: "database",
-      title: "Data pipelines financieros",
-      description:
-        "Flujos de datos confiables y herramientas internas a medida para reportes auditables y siempre actualizados.",
+        "Análisis financiero y planificación para el crecimiento del negocio.",
     },
   ],
 };
 
-export const areas: ServiceArea[] = [consulting, technology];
+export const areas: ServiceArea[] = [consulting];
 
-/** Beneficios del sistema KDD Automation (usados en la Home y /technology). */
+/** Beneficios internos de NAT Automation (usados en /technology — no visible en nav). */
 export const automationBenefits: { icon: IconName; title: string; description: string }[] = [
   {
     icon: "refresh",
